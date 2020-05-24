@@ -1,10 +1,10 @@
 html {
-    background-color: tan;
+    background-color: lightgray;
     margin:0px;
 }
 
 header {  
-    background-color: tan;
+    background-color: lightgray;
     position: fixed;
     top:0;
     width:100%;
@@ -92,7 +92,7 @@ label {
 }
 
 
-button {
+button { 
     background-color: #c40d4a;
     color: white;
     font-size: 20px;
