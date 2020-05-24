@@ -45,7 +45,7 @@ p {
 .item {
     display:flex;
     flex-direction: column;
-    background-color: blanchedalmond;
+    background-color: pink;
     color: green;
     align-items: center;
     border-radius: 10px;
@@ -74,6 +74,14 @@ img {
 
 section {
     text-align: center;
+}
+
+
+
+label {
+    float:left;
+    width: 10em;
+    margin-right: 1em;
 }
 
 @media screen and (max-width: 550px) {

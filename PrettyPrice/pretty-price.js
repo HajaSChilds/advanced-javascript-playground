@@ -35,4 +35,4 @@ function checkCents(cents) {
     }
 }
 
-prettyPrice(6,735)
+prettyPrice(6,73)
