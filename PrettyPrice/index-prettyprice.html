@@ -41,7 +41,7 @@
             </div>
             <div class="item">
                 <img src="./assets/branch-blossom-plant-flower-petal-spring-648247-pxhere.com.jpg" alt="Cherry Blossom Cutting">
-                <h3>Cherry Blossom Cutting</h3>
+                <h3>Cherry Blossom Grafts</h3>
                 <p>Price</p>
             </div> 
     </section>
@@ -73,16 +73,16 @@
                         <input type="number" id="strawberry-blossom" name="strawberry-blossom">
                     </div>
                     <div>
-                        <label for="cherry-blossom-cut">Cherry Blossom Cuttings:</label><br>
+                        <label for="cherry-blossom-cut">Cherry Blossom Grafts:</label><br>
                         <input type="number" id="cherry-blossom-cut" name="cherry-blossom-cut">
                     </div>
                 </div>
                  <div>
                     <label for="sale-price-cents">Sale Price Cents :</label><br>
-                    <input type="number" id="sale-price-cents" name="sale-price-cents">
+                    <input type="number" id="sale-price-cents" name="sale-price-cents" required>
                 </div>          
             </form>
-            <button type="button" on-click="pretty-price">Click For Sale Price</button>
+            <button type="button"  onclick="getNewPrices(prettyPrice)">Click To Add Sale Prices Above</button>
         </div>
     </section>
     <footer></footer>

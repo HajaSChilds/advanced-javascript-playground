@@ -1,14 +1,12 @@
 
-function prettyPrice (price, cents) {
- // TODO: Ensure items are numbers   
+const prettyPrice = (price, cents, item) => {
+ // TODO: Ensure items are numbers 
  // TODO: Take price subtract $1 and add {cents}
     //TODO: Split price into dollars and cents
     //TODO: Subtract $1 from dollars
     //TODO: Replace cents with {cents}
 
-    if(cents.toString().length < 2 || cents.toString().length> 2) {
-        alert("Please input a two-digit cents value for the sale price")
-    }else {
+    
 
         let breakdown = price.toString().split(".");
         console.log(breakdown);
@@ -17,17 +15,58 @@ function prettyPrice (price, cents) {
         let newPrice = newDollarAmt.toString().concat(".", checkCents(cents));
     
         console.log(newPrice); 
+        displayPrices(newPrice, item);
+       
     }  
-}
+
 
 function checkCents(cents) {
-    let centString = cents.toString()
+    let centString = cents.toString();
+    console.log(centString);
+   
     if(centString.includes(".")) {
-        centString = centString.slice(2,)
-        return centString;
-    }else {
-        return cents;
+       centString = centString.slice(1,)
+       console.info(centString);
+       return centString;
+    }else {  
+       return centString;
     }
 }
 
-prettyPrice(6,75)
+function displayPrices(newPrice, itemName) {
+let findItem = document.querySelectorAll("h3")
+ for(i=0; i < findItem; i++) {
+     if (findItem[i].innerHTML === itemName) {
+         console.log('found');
+     }
+ }
+
+}
+
+
+
+function getNewPrices(prettyPrice) {
+    let cents = document.getElementById('sale-price-cents').value;
+
+    try {
+
+        console.log(cents);
+        checkCents(cents);
+        let regularPrices = document.querySelectorAll('input')
+        for(i=0; i < regularPrices.length; i++){
+            if(!(regularPrices[i].id == "sale-price-cents")) {
+                let regularPrice = parseInt(regularPrices[i].value);
+                let itemName = regularPrices[i].name; 
+                prettyPrice(regularPrice,cents,itemName);
+                }
+            
+        } 
+    }catch (e) {
+        alert("Please enter numerical values only in all required fields, and two decimal places");
+    }
+
+}
+
+
+
+
