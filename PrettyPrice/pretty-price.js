@@ -5,12 +5,7 @@ function prettyPrice (price, cents) {
     //TODO: Split price into dollars and cents
     //TODO: Subtract $1 from dollars
     //TODO: Replace cents with {cents}
- 
 
-    if(isNaN(price) || (isNaN(cents))){
-        alert("Please input numbers only");    
-    } 
-    
     if(cents.toString().length < 2 || cents.toString().length> 2) {
         alert("Please input a two-digit cents value for the sale price")
     }else {
@@ -35,4 +30,4 @@ function checkCents(cents) {
     }
 }
 
-prettyPrice(6,73)
+prettyPrice(6,75)

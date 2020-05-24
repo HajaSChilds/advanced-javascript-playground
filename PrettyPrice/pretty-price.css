@@ -1,26 +1,29 @@
 html {
     background-color: tan;
+    margin:0px;
 }
 
 header {  
-    background-color:tan;
+    background-color: tan;
     position: fixed;
     top:0;
     width:100%;
     display:block;
     justify-content:center;
-    margin: 0px 20px 0px 0px;
-    box-shadow: gray 2px 2px 7px;
+    margin: 0px;
+    padding: 20px;
+    box-shadow: gray 7px 2px 7px;
 }
 
 
 header h1 {
     color:green;
     text-align: center;
+    margin:0px;
 }
 
 h1 span, h2 {
-    color: rgb(196, 13, 74);
+    color: #c40d4a;
 }
 
 h2 {
@@ -29,7 +32,7 @@ h2 {
 
 
 p {
-    color:black;
+    color:white;
     height:5%;
 }
 
@@ -45,11 +48,12 @@ p {
 .item {
     display:flex;
     flex-direction: column;
-    background-color: pink;
+    background-color: rgb(233, 125, 143);
     color: green;
     align-items: center;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: gray 7px 2px 7px;
 }
 
 img {
@@ -61,6 +65,51 @@ img {
 .image {
     height:90%;
 }
+
+
+.input {
+    margin: 0px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.price-input {
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    text-align: start;
+    margin: 30px;
+
+}
+
+label {  
+    text-align: start;    
+}
+
+
+button {
+    background-color: #c40d4a;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: green 2px;
+}
+
+button:hover {
+    background-color: green;
+}
+button:active {
+    background-color: white;
+    color: green;
+}
+
 
 @media screen and (max-width: 760px) {
 
@@ -77,12 +126,12 @@ section {
 }
 
 
-
-label {
-    float:left;
-    width: 10em;
-    margin-right: 1em;
+input {
+    margin:0px;
 }
+
+
+
 
 @media screen and (max-width: 550px) {
    .flowers {
