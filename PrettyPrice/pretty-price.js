@@ -1,5 +1,5 @@
 
-const prettyPrice = (price, cents, item) => {
+const prettyPrice = (price, cents, itemName) => {
  // TODO: Ensure items are numbers 
  // TODO: Take price subtract $1 and add {cents}
     //TODO: Split price into dollars and cents
@@ -15,7 +15,7 @@ const prettyPrice = (price, cents, item) => {
         let newPrice = newDollarAmt.toString().concat(".", checkCents(cents));
     
         console.log(newPrice); 
-        displayPrices(newPrice, item);
+        displayPrices(newPrice, itemName);
        
     }  
 
@@ -34,21 +34,20 @@ function checkCents(cents) {
 }
 
 function displayPrices(newPrice, itemName) {
-let findItem = document.querySelectorAll("h3")
- for(i=0; i < findItem; i++) {
-     if (findItem[i].innerHTML === itemName) {
-         console.log('found');
+let findItems = document.querySelectorAll("h3")
+ for(i=0; i < findItems; i++) {
+     let item = findItems[i].innerHTML;
+      console.warn(item);
      }
  }
-
-}
 
 
 
 function getNewPrices(prettyPrice) {
-    let cents = document.getElementById('sale-price-cents').value;
-
+   
     try {
+
+        let cents = document.getElementById("sale-price-cents").value;
 
         console.log(cents);
         checkCents(cents);
@@ -64,7 +63,6 @@ function getNewPrices(prettyPrice) {
     }catch (e) {
         alert("Please enter numerical values only in all required fields, and two decimal places");
     }
-
 }
 
 
