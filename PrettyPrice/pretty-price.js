@@ -43,6 +43,13 @@ let findItems = document.querySelectorAll("h3")
 
 
 
+function getInput(e) {
+
+    console.log(e)
+
+}
+
+
 function getNewPrices(prettyPrice) {
    
     try {
@@ -51,12 +58,16 @@ function getNewPrices(prettyPrice) {
 
         console.log(cents);
         checkCents(cents);
-        let regularPrices = document.querySelectorAll('input')
-        for(i=0; i < regularPrices.length; i++){
+        let regularPrices = document.querySelectorAll('input');
+        console.log(regularPrices);
+        for(i = 0; i < regularPrices.length; i++){
             if(!(regularPrices[i].id == "sale-price-cents")) {
                 let regularPrice = parseInt(regularPrices[i].value);
                 let itemName = regularPrices[i].name; 
+                console.log(regularPrice);
+
                 prettyPrice(regularPrice,cents,itemName);
+                displayPrices(newPrice, itemName);
                 }
             
         } 
