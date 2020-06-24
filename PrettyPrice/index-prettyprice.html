@@ -14,33 +14,33 @@
     </header>
     <main>
         <section class="flowers">
-            <div class="item">
+            <div class="item"  id="sunflower">
                     <img src="./assets/plant-flower-petal-bloom-summer-macro-1092972-pxhere.com.jpg" alt="Sunflower Blossom">
                     <h3>Sunflower</h3>
                     <p>Price</p>
         
             </div>
-            <div class="item">
+            <div class="item" id="ginger" >
                 <img src="./assets/natural-flower-red-ginger-plant-leaf-flowering-plant-1604239-pxhere.com.jpg" alt="Ginger Blossom">
                 <h3>Ginger</h3>
                 <p>Price</p>
             </div>
-            <div class="item">
+            <div class="item"  id="cherry-blossom" >
                 <img src="./assets/tree-nature-branch-blossom-plant-white-820974-pxhere.com.jpg" alt="Cherry Blossom">
                 <h3>Cherry Blossom</h3>
                 <p>Price</p>
             </div>
-            <div class="item">
+            <div class="item"  id="jasmine">
                 <img src="./assets/blossom-plant-sky-sunlight-flower-petal-1413936-pxhere.com.jpg" alt="Jasmine Blossom">
                 <h3>Jasmine</h3>
                 <p>Price</p>
             </div>
-            <div class="item">
+            <div class="item" id="strawberry-blossom"  >
                 <img src="./assets/blossom-plant-leaf-flower-green-herb-58501-pxhere.com.jpg" alt="Strawberry Blossom">
                 <h3>Strawberry Blossom</h3>
                 <p>Price</p>
             </div>
-            <div class="item">
+            <div class="item" id="cherry-blossom-cut">
                 <img src="./assets/branch-blossom-plant-flower-petal-spring-648247-pxhere.com.jpg" alt="Cherry Blossom Cutting">
                 <h3>Cherry Blossom Grafts</h3>
                 <p>Price</p>
@@ -51,37 +51,37 @@
         <h2>SET YOUR ITEM PRICES!</h2>
         <div class="set-prices">
             <form action="">
-                <legend>Enter Regular Prices - Display auto-created sales prices</legend><br>
+                <legend>Enter Regular Prices - Add Sales Price Cents -  Display auto-created "Pretty" sales prices</legend><br>
                 <div class="price-input">
                     <div>
                         <label for="sunflower">Sunflower:</label><br>
                         <input type="number"  class="r-price" 
-                          id="sunflower" name="sunflower">
+                          name="sunflower">
                     </div>
                     <div>
                         <label for="ginger">Ginger:</label><br>
                         <input type="number" class="r-price" 
-                         id="ginger" name="ginger">
+                         name="ginger">
                     </div>
                     <div>
                         <label for="cherry-blossom">Cherry-Blossom:</label><br>
                         <input type="number"class="r-price" 
-                         id="cherry-blossom" name="cherry-blossom">
+                       name="cherry-blossom">
                     </div>
                     <div>
                         <label for="jasmine">Jasmine:</label><br>
                         <input type="number"class="r-price" 
-                         id="jasmine" name="jasmine">
+                         name="jasmine">
                     </div>
                     <div>
                         <label for="strawberry-blossom">Strawberry-Blossom:</label><br>
                         <input type="number" class="r-price" 
-                        id="strawberry-blossom" name="strawberry-blossom">
+                      name="strawberry-blossom">
                     </div>
                     <div>
                         <label for="cherry-blossom-cut">Cherry Blossom Grafts:</label><br>
                         <input type="number" class="r-price" 
-                        id="cherry-blossom-cut" name="cherry-blossom-cut">
+                       name="cherry-blossom-cut">
                     </div>
                 </div>
                  <div>
@@ -89,15 +89,12 @@
                     <input type="number" id="sale-price-cents" name="sale-price-cents" required>
                 </div>          
             </form>
-            <button type="button"  onclick="prettyPrice2()">Click To Add Sale Prices Above</button>
+            <button type="button"  onclick="prettyPriceRef()">Click To Add Sale Prices Above</button>
         </div>
     </section>
     <footer></footer>
     <script
-        src="./pretty-price.js">
-    </script>
-    <script
-        src="./ref-pretty-price.js">
+        src="./pretty-price-ref.js">
     </script>
 </body>
 </html>

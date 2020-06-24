@@ -28,6 +28,7 @@ h1 span, h2 {
 
 h2 {
     position:sticky;
+    z-index: -1;
 }
 
 
