@@ -55,27 +55,33 @@
                 <div class="price-input">
                     <div>
                         <label for="sunflower">Sunflower:</label><br>
-                        <input type="number" id="sunflower" name="sunflower" value="3.50" onchange="getInput(e)">
+                        <input type="number"  class="r-price" 
+                          id="sunflower" name="sunflower">
                     </div>
                     <div>
                         <label for="ginger">Ginger:</label><br>
-                        <input type="number" id="ginger" name="ginger">
+                        <input type="number" class="r-price" 
+                         id="ginger" name="ginger">
                     </div>
                     <div>
                         <label for="cherry-blossom">Cherry-Blossom:</label><br>
-                        <input type="number" id="cherry-blossom" name="cherry-blossom">
+                        <input type="number"class="r-price" 
+                         id="cherry-blossom" name="cherry-blossom">
                     </div>
                     <div>
                         <label for="jasmine">Jasmine:</label><br>
-                        <input type="number" id="jasmine" name="jasmine">
+                        <input type="number"class="r-price" 
+                         id="jasmine" name="jasmine">
                     </div>
                     <div>
                         <label for="strawberry-blossom">Strawberry-Blossom:</label><br>
-                        <input type="number" id="strawberry-blossom" name="strawberry-blossom">
+                        <input type="number" class="r-price" 
+                        id="strawberry-blossom" name="strawberry-blossom">
                     </div>
                     <div>
                         <label for="cherry-blossom-cut">Cherry Blossom Grafts:</label><br>
-                        <input type="number" id="cherry-blossom-cut" name="cherry-blossom-cut">
+                        <input type="number" class="r-price" 
+                        id="cherry-blossom-cut" name="cherry-blossom-cut">
                     </div>
                 </div>
                  <div>
@@ -83,12 +89,15 @@
                     <input type="number" id="sale-price-cents" name="sale-price-cents" required>
                 </div>          
             </form>
-            <button type="button"  onclick="getNewPrices(prettyPrice)">Click To Add Sale Prices Above</button>
+            <button type="button"  onclick="prettyPrice2()">Click To Add Sale Prices Above</button>
         </div>
     </section>
     <footer></footer>
     <script
-        src="./pretty-price.js"></script>
+        src="./pretty-price.js">
+    </script>
+    <script
+        src="./ref-pretty-price.js">
     </script>
 </body>
 </html>

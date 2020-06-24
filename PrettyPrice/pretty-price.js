@@ -8,7 +8,7 @@ const prettyPrice = (price, cents, itemName) => {
 
     
 
-        let breakdown = price.toString().split(".");
+    let breakdown = price.toString().split(".");
         console.log(breakdown);
         let newDollarAmt = parseInt(breakdown[0]) - 1;
         console.log(newDollarAmt);
@@ -34,20 +34,14 @@ function checkCents(cents) {
 }
 
 function displayPrices(newPrice, itemName) {
-let findItems = document.querySelectorAll("h3")
- for(i=0; i < findItems; i++) {
-     let item = findItems[i].innerHTML;
-      console.warn(item);
+    let findItems = document.querySelectorAll("h3");
+        
+       
      }
- }
+   
 
 
 
-function getInput(e) {
-
-    console.log(e)
-
-}
 
 
 function getNewPrices(prettyPrice) {
@@ -58,8 +52,10 @@ function getNewPrices(prettyPrice) {
 
         console.log(cents);
         checkCents(cents);
+
         let regularPrices = document.querySelectorAll('input');
         console.log(regularPrices);
+
         for(i = 0; i < regularPrices.length; i++){
             if(!(regularPrices[i].id == "sale-price-cents")) {
                 let regularPrice = parseInt(regularPrices[i].value);
@@ -72,7 +68,7 @@ function getNewPrices(prettyPrice) {
             
         } 
     }catch (e) {
-        alert("Please enter numerical values only in all required fields, and two decimal places");
+        alert("  ");
     }
 }
 
