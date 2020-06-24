@@ -5,6 +5,7 @@ const prettyPrice = (price, cents, itemName) => {
     //TODO: Split price into dollars and cents
     //TODO: Subtract $1 from dollars
     //TODO: Replace cents with {cents}
+    //TODO: Display new sale price in cards
 
     
 
